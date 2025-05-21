@@ -7,6 +7,17 @@ nav {
     align-items: center;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -52,6 +63,21 @@ body {
     padding: 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 
 .intro-text {
     text-align: center;
@@ -162,3 +188,9 @@ body {
         justify-content: center;
     }
 }
+
+
+
+
+
+
