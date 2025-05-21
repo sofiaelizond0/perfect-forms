@@ -123,6 +123,23 @@ body {
     font-size: 1.3rem;
 }
 
+.homepage-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #da4699;
+}
+
+.presentacion {
+     text-align: center;
+    font-size: 1.6rem;
+    max-width: 1000px;
+    margin: 4rem auto 7rem; /* top, horizontal, bottom margins */
+    padding: 0 1rem;
+}
+
+
 @media (max-width: 900px) {
     .features-container {
         grid-template-columns: 1fr 1fr;
@@ -145,4 +162,3 @@ body {
         justify-content: center;
     }
 }
-
