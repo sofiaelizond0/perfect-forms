@@ -1,7 +1,7 @@
 nav {
     background-color: #aad8ce;
     color: #fff;
-    padding: 10px;
+    padding: 10px 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ nav {
     font-size: 1.3rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     display: block; 
 }
 
@@ -40,11 +40,7 @@ nav {
     transition: all 0.5s ease;
 }
 
-nav-links li:hover {
-    color: #fff;
-}
-
-nav-links li:hover::after {
+.nav-links li:hover::after {
     width: 100%;
 }
 
@@ -59,11 +55,10 @@ body {
 
 .intro-text {
     text-align: center;
-    margin-top: 4rem; /* Space after header */
-    margin-bottom: 7rem; /* Space before features */
     font-size: 1.6rem;
-    max-width: 950px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 4rem auto 7rem; /* top, horizontal, bottom margins */
+    padding: 0 1rem; /* Add some padding on the sides */
 }
 
 .intro-text p {
@@ -73,25 +68,23 @@ body {
 .features-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 2rem; /* Space between columns */
-    max-width: 1200px; 
+    gap: 3rem; /* Space between columns */
+    max-width: 1300px; 
     margin: 0 auto; /* Center the grid */
     margin-top: 3rem; /* Space after header */
     margin-bottom: 3rem; /* Space before footer */
     /* until here we have the 3 columns separated nicely */
-
+    padding: 0 1rem;
 }
 
 .feature-card {
     display: flex;
     flex-direction: column;
     color: initial;
-    padding: 1.5rem;
+    /*no padding*/
     text-align: center;
     overflow: hidden; /* Ensures images respect border radius */
-    border-radius: 8px; /* Rounded corners */
-    /*background-color: #dfa7c6;  */
-    background-color: rgba(223, 167, 198, 0.48); 
+    background-color: rgba(223, 167, 198, 0.48); /*for opacity*/
 }
 
 .feature img {
@@ -99,8 +92,9 @@ body {
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensures image covers the area without distortion */
   max-height: 200px; /* Set a maximum height (adjust as needed) */
-  margin-top: auto; /* Pushes image to bottom if using flex column */
-  border-radius: 0 0 8px 8px; /* Optional: rounds bottom corners */
+  margin-top: 1.5rem; /* Pushes image to bottom if using flex column */
+  margin-bottom: 0;
+
 }
 
 .feature-title {
@@ -109,9 +103,11 @@ body {
     text-align: center;
     margin-bottom: 1rem;
     font-size:1.5rem;
+    line-height: 1.5;
+    word-spacing: 0.3rem;
 
-    width: min-content; /* Shrink to fit longest word */
-    max-width: 150px;   /* Adjust as needed */
+    /*width: min-content; /* Shrink to fit longest word */
+    max-width: 200px;   /* Adjust as needed */
     margin-left: auto;  /* Center the title */
     margin-right: auto;
 }
@@ -120,8 +116,10 @@ body {
     color: white !important;
     line-height: 1.5;
     text-align: center;
-    margin-top: 4rem; 
-    margin-bottom: 4rem;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 1.3rem;
 }
 
