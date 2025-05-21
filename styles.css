@@ -69,14 +69,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding: 2rem 0;
-    text-align: center;
-}
-
-.logo img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
 }
 
 .intro-text {
@@ -164,6 +156,35 @@ body {
     margin: 4rem auto 7rem; /* top, horizontal, bottom margins */
     padding: 0 1rem;
 }
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust as needed */
+    margin: 4rem auto;
+}
+
+.location-desc {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 900px) {
