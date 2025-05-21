@@ -1,0 +1,7 @@
+{
+    "editor.suggest.showSnippets": false,
+    "javascript.suggest.classMemberSnippets.enabled": false,
+    "typescript.suggest.classMemberSnippets.enabled": false,
+    "typescript.suggest.objectLiteralMethodSnippets.enabled": false,
+    "editor.snippets.codeActions.enabled": false
+}
